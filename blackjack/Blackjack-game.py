@@ -88,6 +88,7 @@ while t1 == True:
         continue_game = input('Please type a valid input!\ncontinue the game? [y/n]  ')
 
     if continue_game == 'y':
+        system('cls')
         print(logo)
         game_status =blackjack()
         print(game_status)
