@@ -1,6 +1,6 @@
 from os import system
 import random
-
+import turtle as t
 
 
 ######### Correctinput:         ( Helps user to pick correct set of input )
@@ -57,7 +57,7 @@ def calculate():
 #########  Random Color Generator:      (R,G,B)
 def random_color():
     # turtle.pensize(2)
-    # t.colormode(255)
+    t.colormode(255)
     r = random.randint(0,255)
     g = random.randint(0,255)
     b = random.randint(0,255)
@@ -65,4 +65,12 @@ def random_color():
 
 
 
-print(random_color())
+########   Check if in x:
+def ifin(value , target):
+    if value in target:
+        return True
+    else:
+        return False
+    
+    
+
